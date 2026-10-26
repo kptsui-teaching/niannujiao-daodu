@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>《念奴嬌·赤壁懷古》範文導讀｜漢華中學中國語文科</title>
+<style>
+
+:root{
+  --blue:#2563eb;--blue-dark:#1d4ed8;--blue-soft:#eff6ff;--blue-mid:#dbeafe;
+  --ink:#1f2937;--muted:#4b5563;--line:#e5e7eb;--card:#fff;--bg:#f4f6fb;
+  --ok:#16a34a;--ok-bg:#dcfce7;--bad:#dc2626;--bad-bg:#fee2e2;--warn:#b45309;--warn-bg:#fef3c7;
+  --radius:14px;--shadow:0 1px 4px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Noto Sans TC","PingFang TC","PingFang HK","Microsoft JhengHei","Noto Sans CJK TC",sans-serif;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.65}
+a{color:var(--blue)}
+.skip{position:absolute;left:-9999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px 12px;z-index:100;border-radius:8px}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);box-shadow:0 1px 0 rgba(37,99,235,.06)}
+.topbar-inner{max-width:880px;margin:0 auto;padding:10px 14px 8px}
+.brand{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;margin-bottom:6px}
+.brand .school{font-size:.85rem;color:var(--blue);font-weight:700;letter-spacing:.02em}
+.brand h1{margin:0;font-size:1.15rem;font-weight:800}
+.nav{display:flex;flex-wrap:wrap;gap:6px}
+.nav a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:6px 12px;border-radius:999px;background:var(--blue-soft);color:var(--blue-dark);text-decoration:none;font-weight:700;font-size:.92rem;border:1px solid transparent}
+.nav a:hover,.nav a:focus{background:var(--blue);color:#fff;outline:none}
+main{max-width:880px;margin:0 auto;padding:16px 14px 80px}
+.sec{margin:22px 0 28px;scroll-margin-top:110px}
+.sec>h2{margin:0 0 12px;font-size:1.35rem;color:var(--blue-dark);padding-bottom:6px;border-bottom:3px solid var(--blue-mid)}
+.sec>h3,.card h3{margin:16px 0 8px;font-size:1.08rem}
+.card{background:var(--card);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow);margin:10px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+@media(max-width:700px){.grid2,.grid3{grid-template-columns:1fr}}
+.pill{display:inline-block;background:var(--blue-soft);color:var(--blue-dark);border-radius:999px;padding:2px 10px;font-size:.85rem;font-weight:700;margin-right:4px}
+.muted{color:var(--muted);font-size:.95rem}
+.person{border-left:4px solid var(--blue);padding-left:12px;margin:10px 0}
+.story{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fafbff}
+.story h4{margin:0 0 8px;color:var(--blue-dark)}
+.story dl{margin:0;display:grid;grid-template-columns:4.5em 1fr;gap:4px 8px}
+.story dt{font-weight:700;color:var(--muted)}.story dd{margin:0}
+.story .baihua{margin:10px 0 0;padding:10px 12px;background:#f0fdf4;border-left:4px solid #16a34a;border-radius:0 10px 10px 0;font-size:.95rem;line-height:1.65;color:#14532d}
+.story .baihua strong{color:#166534}
+.vocab{display:grid;gap:8px}
+.vocab-item{display:grid;grid-template-columns:minmax(7em,auto) 1fr;gap:8px 12px;padding:10px 12px;background:#fafbff;border-radius:10px;border:1px solid var(--line)}
+.vocab-item b{color:var(--blue-dark)}
+@media(max-width:560px){.vocab-item{grid-template-columns:1fr}}
+.struct ul{margin:6px 0;padding-left:1.2em}.struct li{margin:4px 0}
+.student-form{display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:10px}
+@media(max-width:640px){.student-form{grid-template-columns:1fr}}
+label.field{display:block;font-weight:700;font-size:.92rem;margin-bottom:4px}
+input.field,select.field{width:100%;min-height:48px;padding:10px 12px;font:inherit;border:2px solid #d1d5db;border-radius:10px;background:#fff}
+input.field:focus,select.field:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(37,99,235,.2)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.tabs button{flex:1;min-width:120px;min-height:48px;font:inherit;font-weight:700;border:2px solid var(--blue);border-radius:12px;background:#fff;color:var(--blue);cursor:pointer}
+.tabs button.active,.tabs button[aria-selected="true"]{background:var(--blue);color:#fff}
+.prog-row{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:.95rem;color:var(--muted);margin:8px 0 4px}
+.bar{height:10px;background:#e5e7eb;border-radius:6px;overflow:hidden}
+.bar>div{height:100%;background:var(--blue);width:0;transition:width .3s}
+.overall{background:var(--blue-soft);border:1px solid var(--blue-mid);border-radius:12px;padding:12px 14px;margin:12px 0}
+.opt{display:flex;align-items:flex-start;gap:10px;min-height:56px;padding:12px;margin:8px 0;border:2px solid #d1d5db;border-radius:12px;background:#fff;cursor:pointer;text-align:left}
+.opt input{width:22px;height:22px;margin-top:3px;flex:none}
+.opt.sel{border-color:var(--blue);background:var(--blue-soft)}
+.opt.ok{border-color:var(--ok);background:var(--ok-bg)}
+.opt.bad{border-color:var(--bad);background:var(--bad-bg)}
+.stem{font-size:1.08rem;font-weight:700;margin:0 0 10px}
+.fb{margin-top:12px;padding:12px;border-radius:10px}
+.fb.ok{background:var(--ok-bg)}.fb.bad{background:var(--bad-bg)}
+.btn{font:inherit;font-weight:700;min-height:52px;width:100%;margin-top:12px;border:0;border-radius:12px;background:var(--blue);color:#fff;cursor:pointer}
+.btn:disabled{background:#9ca3af;cursor:not-allowed}
+.btn.sec{background:#fff;color:var(--blue);border:2px solid var(--blue)}
+.btn.ok{background:var(--ok)}
+.btn.warn{background:#d97706}
+.btn-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:500px){.btn-row{grid-template-columns:1fr}}
+.big{font-size:1.8rem;font-weight:800;text-align:center;margin:8px 0}
+.rv{border-top:1px solid var(--line);padding:10px 0}.rv .t{font-weight:700}.c{color:#15803d}.w{color:#b91c1c}
+.note{background:var(--warn-bg);border-left:4px solid var(--warn);padding:10px 12px;border-radius:0 10px 10px 0;margin:10px 0;font-size:.95rem}
+.video-box{aspect-ratio:16/9;background:linear-gradient(135deg,#dbeafe,#eff6ff);border:2px dashed #93c5fd;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;padding:20px;text-align:center;color:var(--muted)}
+.video-box iframe{width:100%;height:100%;border:0;border-radius:12px}
+.video-wrap{position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#000;width:100%}
+.video-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:12px}
+.footer{max-width:880px;margin:0 auto;padding:8px 14px 28px;color:var(--muted);font-size:.88rem;text-align:center}
+[hidden]{display:none!important}
+@media print{
+  .topbar{position:static;box-shadow:none}
+  .nav,.btn,#quizPanel .btn,.student-form,input,select,.tabs{display:none!important}
+  body{background:#fff;font-size:14px}
+  .card,.story,.vocab-item{box-shadow:none;border:1px solid #ccc}
+  .sec{break-inside:avoid}
+}
+.classic{font-size:1.05rem;line-height:2;letter-spacing:.02em}
+.classic p{margin:0 0 1em}
+.classic h3{margin:18px 0 10px;font-size:1.1rem;color:var(--blue-dark);border-left:4px solid var(--blue);padding-left:10px}
+.classic .attr{margin-top:12px;padding-top:10px;border-top:1px dashed var(--line);font-size:.9rem;color:var(--muted);line-height:1.55}
+.classic .poem-line{font-size:1.15rem;font-weight:600;letter-spacing:.06em;text-align:center;margin:0.35em 0}
+.classic .poem-title{text-align:center;font-size:1.25rem;font-weight:800;margin:0 0 4px;color:var(--blue-dark)}
+.classic .poem-author{text-align:center;margin:0 0 16px;color:var(--muted);font-size:.95rem}
+.yuyi{line-height:1.85}
+.yuyi p{margin:0 0 .95em}
+.yuyi h3{margin:18px 0 10px;font-size:1.1rem;color:var(--blue-dark);border-left:4px solid var(--blue);padding-left:10px}
+.sec-head-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin:0 0 12px;padding-bottom:6px;border-bottom:3px solid var(--blue-mid)}
+.sec-head-row h2{margin:0;padding:0;border:0;font-size:1.35rem;color:var(--blue-dark)}
+.btn-toggle{font:inherit;font-weight:700;font-size:.88rem;min-height:40px;padding:6px 14px;border-radius:999px;border:2px solid var(--blue);background:#fff;color:var(--blue);cursor:pointer;width:auto;margin:0}
+.btn-toggle:hover,.btn-toggle:focus{background:var(--blue);color:#fff;outline:none}
+
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳至正文</a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="school">漢華中學中國語文科</span>
+      <h1>《念奴嬌·赤壁懷古》範文導讀</h1>
+    </div>
+    <nav class="nav" aria-label="章節導航">
+      <a href="#daodu">導讀</a>
+      <a href="#quanwen">全文</a>
+      <a href="#yuyi">語譯</a>
+      <a href="#zici">重點字詞</a>
+      <a href="#zhangfa">章法／寫作手法</a>
+      <a href="#zice">自測</a>
+      <a href="#shipin">影片</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ========== 1 導讀 ========== -->
+<section class="sec" id="daodu">
+  <h2>一、導讀</h2>
+  <p class="muted">對象：中四至中六　｜　篇章：《念奴嬌·赤壁懷古》　｜　作者：蘇軾（宋）　｜　用途：學生自學＋課堂投影</p>
+
+  <div class="card">
+    <h3>背景</h3>
+    <p>宋神宗元豐二年（公元 1079 年），蘇軾因「<strong>烏臺詩案</strong>」獲罪，其後貶謫<strong>黃州</strong>（今湖北省黃岡市）。謫居期間，他遊覽黃州城外的<strong>赤壁磯</strong>（後人亦稱東坡赤壁），寫下這闋《念奴嬌·赤壁懷古》。須注意：黃州赤壁磯<strong>並非</strong>三國赤壁大戰的確切舊址；詞人乃<strong>借地懷古</strong>，借周瑜破曹的功業，抒發自身<strong>懷才不遇</strong>與人生短暫的感慨，同時展現<strong>豪放</strong>的詞風與曠達胸襟。</p>
+  </div>
+
+  <div class="card">
+    <h3>作者簡介</h3>
+    <div class="person"><span class="pill">作者</span><strong>蘇軾</strong>（公元 1037–1101），字子瞻，號東坡居士，眉州眉山（今四川省眉山市）人。與父蘇洵、弟蘇轍合稱「三蘇」。嘉祐年間進士及第，歷任地方與朝中官職。烏臺詩案後貶黃州，其後又歷惠州、儋州等貶謫。詩、詞、文、書、畫皆有卓越成就；詞作擴展題材、開拓意境，為<strong>豪放詞</strong>的重要代表。本詞正是其豪放風格的典範之一。</div>
+  </div>
+
+  <div class="card">
+    <h3>記住三個關鍵</h3>
+    <div class="grid3" style="margin-top:10px">
+      <article class="story">
+        <h4>① 謫居・借地</h4>
+        <dl>
+          <dt>處境</dt><dd>烏臺詩案後謫居黃州。</dd>
+          <dt>地點</dt><dd>黃州赤壁磯 ≠ 赤壁大戰確址。</dd>
+        </dl>
+        <p class="baihua"><strong>白話：</strong>蘇軾因詩文獲罪，貶到黃州。他遊的「赤壁」是當地的赤壁磯，並不是周瑜火燒曹軍的那個戰場——但這不妨礙他<strong>借這個地方想念古人</strong>。讀詞時要分清「地理事實」與「文學寄興」。</p>
+      </article>
+      <article class="story">
+        <h4>② 懷古・對照</h4>
+        <dl>
+          <dt>古人</dt><dd>周瑜：小喬初嫁、雄姿英發、談笑破敵。</dd>
+          <dt>自己</dt><dd>故國神遊、早生華髮、人間如夢。</dd>
+        </dl>
+        <p class="baihua"><strong>白話：</strong>上片寫大江、亂石、驚濤，引出「周郎赤壁」；下片專寫公瑾當年多麼意氣風發，反襯自己謫居、頭髮花白、功業未就。懷的是古人，寄的是<strong>自己懷才不遇</strong>的情。</p>
+      </article>
+      <article class="story">
+        <h4>③ 豪放・曠達</h4>
+        <dl>
+          <dt>風格</dt><dd>大江東去、英雄事業——豪放詞。</dd>
+          <dt>收束</dt><dd>人間如夢，一尊還酹江月。</dd>
+        </dl>
+        <p class="baihua"><strong>白話：</strong>詞寫長江、英雄、破敵，氣勢闊大，屬<strong>豪放</strong>一路；結尾卻把感慨收成「人間如夢」，對着江月奠一杯酒——感慨之中仍有<strong>曠達</strong>，不是一味消沉。</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>溫習口訣</h3>
+    <p>大江東去淘風流，故壘周郎赤壁遊；亂石驚濤千堆雪，江山如畫豪傑留；遙想公瑾小喬嫁，羽扇談笑櫓灰休；故國神遊華髮早，人間如夢酹江月；烏臺謫黃借地詠，豪放懷古兩對照。</p>
+  </div>
+</section>
+
+<!-- ========== 2 全文 ========== -->
+<section class="sec" id="quanwen">
+  <h2>二、全文</h2>
+  <p class="muted">蘇軾《念奴嬌·赤壁懷古》　｜　文本依教育局「指定文言經典學習材料」參考版本</p>
+  <div class="card classic">
+    <div class="poem-title">念奴嬌　赤壁懷古</div>
+    <div class="poem-author">蘇軾</div>
+    <h3>上片</h3>
+    <p class="poem-line">大江東去，浪淘盡、千古風流人物。</p>
+    <p class="poem-line">故壘西邊，人道是、三國周郎赤壁。</p>
+    <p class="poem-line">亂石穿空，驚濤拍岸，捲起千堆雪。</p>
+    <p class="poem-line">江山如畫，一時多少豪傑！</p>
+    <h3>下片</h3>
+    <p class="poem-line">遙想公瑾當年，小喬初嫁了，雄姿英發。</p>
+    <p class="poem-line">羽扇綸巾，談笑間、檣櫓灰飛煙滅。</p>
+    <p class="poem-line">故國神遊，多情應笑我，早生華髮。</p>
+    <p class="poem-line">人間如夢，一尊還酹江月。</p>
+    <p class="attr">出處：蘇軾《念奴嬌·赤壁懷古》；文本依教育局「指定文言經典學習材料」參考版本（ks4_17a_text.pdf）。註：以上僅就坊間所見資料，提供一個參考版本；教師亦可參考、使用其他版本。</p>
+  </div>
+</section>
+
+<!-- ========== 3 語譯 ========== -->
+<section class="sec" id="yuyi">
+  <div class="sec-head-row">
+    <h2>三、語譯</h2>
+    <button type="button" class="btn-toggle" id="yuyiToggle" aria-controls="yuyiBody" aria-expanded="true">隱藏語譯</button>
+  </div>
+  <div id="yuyiBody">
+  <p class="note">以下語譯供自學參考，考試請以課文原文為準。</p>
+  <div class="card yuyi">
+    <h3>上片</h3>
+    <p>長江向東奔流而去，波浪淘盡了千古以來的傑出人物。舊時營壘的西邊，人們說那就是三國時周郎破曹的赤壁。陡峭的石壁直插入空，驚濤拍打着岸邊，捲起千萬堆雪白的浪花。江山美得如同圖畫，那一時代湧現了多少英雄豪傑！</p>
+    <h3>下片</h3>
+    <p>遙想當年的周公瑾，小喬剛剛嫁給他的時候，他正是雄姿勃發、意氣風發。手握羽扇、頭戴綸巾，談笑之間，敵方的船艦便化為灰燼、煙消雲散。我神思遊於這古戰場，該會笑我太多情了吧，竟然這麼早就生出花白的頭髮。人間如同夢幻，且讓我再斟一杯酒，祭奠這江上的明月。</p>
+  </div>
+  </div>
+</section>
+
+<!-- ========== 4 重點字詞 ========== -->
+<section class="sec" id="zici">
+  <h2>四、重點字詞</h2>
+  <p class="muted">以下重點詞語宜連同課文語境記誦。（注釋參考教育局材料及通行箋注）</p>
+  <div class="card vocab">
+    <div class="vocab-item"><b>故壘</b><span>舊時的營壘；古戰場遺留下來的營壘。「故壘西邊」——舊營壘的西邊。</span></div>
+    <div class="vocab-item"><b>周郎</b><span>指周瑜。周瑜任建威中郎將時年僅二十四歲，吳中皆呼為周郎。「三國周郎赤壁」。</span></div>
+    <div class="vocab-item"><b>小喬</b><span>喬玄的次女，周瑜之妻。與姊大喬合稱「二喬」。「小喬初嫁了」——寫周瑜年輕得意之時。</span></div>
+    <div class="vocab-item"><b>公瑾</b><span>周瑜的字。「遙想公瑾當年」。</span></div>
+    <div class="vocab-item"><b>羽扇綸巾</b><span>手持羽毛扇、頭戴絲質頭巾。形容儒將從容儒雅的裝束，而非全副甲胄。</span></div>
+    <div class="vocab-item"><b>檣櫓</b><span>檣：船上桅杆；櫓：槳。此處借指曹軍的船艦。「檣櫓灰飛煙滅」——敵船瞬間摧毀。</span></div>
+    <div class="vocab-item"><b>故國</b><span>此處指古戰場／三國舊地。「故國神遊」——神思遊於往昔之地。</span></div>
+    <div class="vocab-item"><b>華髮</b><span>花白的頭髮，年華漸老之徵。「早生華髮」——過早地生出白髮。</span></div>
+    <div class="vocab-item"><b>尊</b><span>同「樽」，酒器；「一尊」即一杯酒。「一尊還酹江月」。</span></div>
+    <div class="vocab-item"><b>酹</b><span>把酒澆在地上（或江中）以示祭奠。「酹江月」——對着江月奠酒。</span></div>
+    <div class="vocab-item"><b>淘盡</b><span>沖刷盡、淘汰盡。「浪淘盡、千古風流人物」——時間如浪，淘盡英雄。</span></div>
+    <div class="vocab-item"><b>風流人物</b><span>傑出而有風采、功業的人物。此處「風流」為褒義。</span></div>
+    <div class="vocab-item"><b>雄姿英發</b><span>雄姿勃發、意氣風發。形容周瑜年輕時英氣逼人。</span></div>
+    <div class="vocab-item"><b>灰飛煙滅</b><span>如灰飛散、如煙消滅。比喻曹軍船艦瞬間徹底毀滅。</span></div>
+  </div>
+</section>
+
+<!-- ========== 5 章法／寫作手法 ========== -->
+<section class="sec" id="zhangfa">
+  <h2>五、章法／寫作手法</h2>
+  <div class="card struct">
+    <h3>1. 詞體・上下片</h3>
+    <p>《念奴嬌》為<strong>詞牌</strong>，《赤壁懷古》為題。全詞分<strong>上片</strong>與<strong>下片</strong>（上下闋）。上片寫長江赤壁之景，點出「周郎赤壁」與一時豪傑；下片遙想周瑜功業，轉入自傷與「人間如夢」的收束。</p>
+    <h3>2. 主要寫作手法</h3>
+    <ul>
+      <li><strong>以景入情</strong>：先以「大江東去」「亂石穿空」「驚濤拍岸」等雄奇之景起筆，再引入懷古與身世之感；景為情之基。</li>
+      <li><strong>周瑜對照</strong>：以公瑾「小喬初嫁」「雄姿英發」「談笑破敵」對照自己「早生華髮」、謫居不遇，懷古而寄情。</li>
+      <li><strong>誇張與比喻</strong>：「亂石穿空」「捲起千堆雪」「江山如畫」「灰飛煙滅」等，寫景寫戰，形象鮮明、氣勢磅礡。</li>
+      <li><strong>入聲韻</strong>：物、壁、雪、傑、發、滅、髮、月等韻腳多為入聲，聲情激壯，有助豪放氣勢。</li>
+      <li><strong>豪放詞風</strong>：題材寫大江、英雄、破敵，意境開闊；結尾「人間如夢，一尊還酹江月」於感慨中見曠達。</li>
+    </ul>
+    <h3>3. 情志</h3>
+    <p>在謫居失意之中，仍能以雄闊之筆懷想英雄；既有懷才不遇、人生如夢的感慨，亦有對江月奠酒的曠達——豪放而不流於虛囂。</p>
+    <h3>4. 結構示意</h3>
+    <p>上片：大江淘盡 → 故壘周郎 → 亂石驚濤 → 江山豪傑（寫景・引出） → 下片：公瑾小喬・羽扇破敵（懷古・對照） → 故國神遊・華髮（自傷） → 人間如夢・酹江月（收束・曠達）。</p>
+  </div>
+</section>
+
+<!-- ========== 6 自測 ========== -->
+<section class="sec" id="zice">
+  <h2>六、自測</h2>
+  <p class="muted">題目為校本自測（內容理解／字詞解釋／寫作手法各 15 題，合共 45 題）。可先作答；交卷前請填學生資料。</p>
+
+  <div class="card" id="studentCard">
+    <h3>學生資料（交卷必填）</h3>
+    <div class="student-form">
+      <div>
+        <label class="field" for="cls">班別</label>
+        <input class="field" id="cls" name="cls" placeholder="例：4A" maxlength="4" autocomplete="off" required>
+      </div>
+      <div>
+        <label class="field" for="sid">學號</label>
+        <input class="field" id="sid" name="sid" placeholder="例：01" maxlength="4" autocomplete="off" required>
+      </div>
+      <div>
+        <label class="field" for="sname">姓名</label>
+        <input class="field" id="sname" name="sname" placeholder="請輸入姓名" maxlength="20" autocomplete="name" required>
+      </div>
+    </div>
+    <p class="muted" style="margin:8px 0 0">班別可用如 4A、5C、6D；學號請填兩位數字（如 01）。</p>
+  </div>
+
+  <div class="overall" id="overallBox">
+    <div class="prog-row"><strong>整體進度</strong><span id="overallText">0 / 45 題　總分 0</span></div>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="45" aria-valuenow="0" id="overallBar"><div id="overallFill"></div></div>
+    <div class="prog-row" style="margin-top:8px;font-size:.9rem">
+      <span>內容理解：<b id="scContent">0</b>/15</span>
+      <span>字詞解釋：<b id="scVocab">0</b>/15</span>
+      <span>寫作手法：<b id="scRhet">0</b>/15</span>
+    </div>
+  </div>
+
+  <div class="tabs" role="tablist" aria-label="練習部分">
+    <button type="button" role="tab" id="tab-content" aria-selected="true" aria-controls="panel-quiz" data-sec="content">內容理解（15）</button>
+    <button type="button" role="tab" id="tab-vocab" aria-selected="false" aria-controls="panel-quiz" data-sec="vocab">字詞解釋（15）</button>
+    <button type="button" role="tab" id="tab-rhet" aria-selected="false" aria-controls="panel-quiz" data-sec="rhetorical">寫作手法（15）</button>
+  </div>
+
+  <div class="card" id="panel-quiz" role="tabpanel">
+    <div class="prog-row"><span id="secProgText">第 1 / 15 題</span><span id="secScoreText">本節答對：0</span></div>
+    <div class="bar" id="secBar" role="progressbar" aria-valuemin="0" aria-valuemax="15" aria-valuenow="0"><div id="secFill"></div></div>
+    <form id="qform" onsubmit="return false" style="margin-top:12px">
+      <fieldset style="border:0;margin:0;padding:0">
+        <legend class="stem" id="stem"></legend>
+        <div id="opts"></div>
+      </fieldset>
+      <div id="fb" class="fb" hidden></div>
+      <button type="button" class="btn" id="checkBtn" disabled>檢查答案</button>
+      <div class="btn-row">
+        <button type="button" class="btn sec" id="nextBtn" hidden>下一題</button>
+        <button type="button" class="btn ok" id="secDoneBtn" hidden>完成本節</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="card" id="secResult" hidden>
+    <h3 id="secResultTitle">本節完成</h3>
+    <p class="big" id="secFinal"></p>
+    <p id="secFinalMsg" class="muted" style="text-align:center"></p>
+    <div class="btn-row">
+      <button type="button" class="btn sec" id="retrySecBtn">重做本節</button>
+      <button type="button" class="btn" id="goNextSecBtn">下一節</button>
+    </div>
+    <button type="button" class="btn warn" id="submitEarlyBtn" style="margin-top:10px" hidden>交卷（已完成全部）</button>
+    <h3>答題回顧</h3>
+    <div id="secReview"></div>
+  </div>
+
+  <div class="card" id="finalResult" hidden>
+    <h3>全部完成・交卷</h3>
+    <p class="big" id="finalScore"></p>
+    <p id="finalDetail" style="text-align:center"></p>
+    <p id="submitMsg" class="note" hidden></p>
+    <div class="btn-row">
+      <button type="button" class="btn ok" id="submitBtn">交卷至老師試算表</button>
+      <button type="button" class="btn sec" id="retryAllBtn">全部重做</button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 7 影片 ========== -->
+<section class="sec" id="shipin">
+  <h2>七、影片｜寶寶老師陪你快速溫範文</h2>
+  <div class="card">
+    <p><a id="videoTitleLink" href="#" target="_blank" rel="noopener">寶寶老師陪你快速溫範文｜《念奴嬌·赤壁懷古》</a></p>
+    <div id="videoArea"></div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">漢華中學中國語文科　｜　《念奴嬌·赤壁懷古》範文導讀　｜　供課堂投影及學生自學</footer>
+
+<script>
+
+(function () {
+"use strict";
+
+/* ===== 設定：預覽階段 GAS 留空；影片 ID 已填 ===== */
+const GAS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbzrWkOuts7eCZg0e3kDkvG25T0swXXtPbOKbh2SLcwXNA2pR6_Ai04EXpbd5s4hoHMJUA/exec";
+const YOUTUBE_ID = "QsdzU9xONGE";
+
+/* ===== 題庫：校本自測；o[0] 為正確答案 ===== */
+var Q_CONTENT = [{"s":"《念奴嬌·赤壁懷古》的作者是：","o":["蘇軾","蘇洵","蘇轍","辛棄疾"],"e":"教育局指定篇章：蘇軾《念奴嬌·赤壁懷古》。"},{"s":"蘇軾的字是：","o":["子瞻","子美","太白","幼安"],"e":"蘇軾字子瞻，號東坡居士。"},{"s":"本詞寫作時，蘇軾正處於哪一段處境？","o":["烏臺詩案後謫居黃州","翰林學士任上春風得意","出使遼邦途中","晚年惠州、儋州之前的汴京高官生涯"],"e":"元豐二年烏臺詩案後，蘇軾貶謫黃州；本詞約作於黃州期間。"},{"s":"詞中所詠的「赤壁」，與三國赤壁大戰舊址的關係是：","o":["黃州赤壁磯（當地傳為赤壁）並非赤壁大戰確址，屬懷古寄興","即周瑜大破曹軍的確鑿戰場","在建業（南京）城外","在成都附近"],"e":"黃州赤壁磯（東坡赤壁）與三國赤壁大戰舊址並非同一地；詞人借地懷古。"},{"s":"「千古風流人物」主要慨嘆：","o":["歷史上傑出人物隨長江東去而淘盡","當朝權貴的財富","作者自家祖先譜系","科舉考題"],"e":"大江東去、浪淘盡千古風流人物——時間沖刷、英雄不再。"},{"s":"「人道是、三國周郎赤壁」中的「周郎」指：","o":["周瑜","周文王","周公旦","周邦彥"],"e":"周郎即周瑜；三國時吳軍統帥，赤壁之戰破曹。"},{"s":"「亂石穿空，驚濤拍岸，捲起千堆雪」主要描寫：","o":["赤壁一帶江景的雄奇險峻","宮廷樂舞","農家春耕","邊塞沙場廝殺"],"e":"以亂石、驚濤、雪浪寫江山形勝，氣勢磅礡。"},{"s":"「遙想公瑾當年，小喬初嫁了」中「公瑾」是誰的字？","o":["周瑜","諸葛亮","曹操","孫權"],"e":"周瑜字公瑾；小喬為其妻。"},{"s":"「羽扇綸巾，談笑間、檣櫓灰飛煙滅」塑造周瑜的形象較接近：","o":["從容儒雅、談笑破敵的儒將風采","窮途末路的敗將","隱居不問世事的隱士","貪杯誤事的武夫"],"e":"羽扇綸巾見儒雅；談笑間破敵見從容與雄才。"},{"s":"「故國神遊，多情應笑我，早生華髮」表達作者：","o":["神遊古戰場後自嘲多情、華髮早生，感慨懷才不遇與人生短暫","慶祝高升","嘲笑周瑜","勸人及時行樂而無寄託"],"e":"由懷古轉入自傷：功業未就而已華髮，語帶自嘲與感慨。"},{"s":"「人間如夢，一尊還酹江月」的情調較接近：","o":["以人生如夢收束，對江月奠酒，豪放中帶曠達","徹底消沉、否定一切","純粹記賬式寫喝酒份量","諷刺農民"],"e":"以如夢收束，酹酒江月，於感慨中見曠達。"},{"s":"本詞在詞史上常被視為哪一派的代表作之一？","o":["豪放詞","婉約詞（專寫閨情）","花間詞","新樂府"],"e":"蘇軾開拓豪放詞風；本詞寫大江、英雄，氣象豪邁。"},{"s":"詞人借周瑜形象，主要用意是：","o":["以周瑜少年功業對照自己謫居、華髮早生，寄懷才不遇之情","純粹為周瑜寫傳記而無己意","諷刺小喬","記錄赤壁地理測量"],"e":"懷古寄情：以周瑜英發對照己身不遇。"},{"s":"「江山如畫，一時多少豪傑」在結構上的作用是：","o":["收束上片寫景懷古，由江山過渡到英雄，自然引出下片遙想周瑜","另起無關話題","純屬湊韻","結束全詞"],"e":"上片以江山、豪傑收束，下片專寫公瑾。"},{"s":"本詞主旨最接近：","o":["謫居黃州，借赤壁懷古詠周瑜，抒豪放之情並寄懷才不遇、人生如夢之慨","純粹描寫長江水文數據","記錄烏臺詩案審判過程","勸人戒酒"],"e":"懷古＋自傷＋曠達；豪放詞的代表情志。"}];
+var Q_VOCAB = [{"s":"「故壘」的意思較接近：","o":["舊時的營壘／古戰場遺壘","故意堆壘的石頭","故鄉的城堡全新建成","酒樓招牌"],"e":"故壘＝舊營壘；「故壘西邊」點古戰場方位。"},{"s":"「周郎」指：","o":["周瑜（三國吳將）","周公","周邦彥","杜甫"],"e":"周郎即周瑜。"},{"s":"「小喬」是：","o":["周瑜之妻（喬玄次女）","諸葛亮之妻","曹操之女","蘇軾之妹"],"e":"二喬故事：大喬嫁孫策，小喬嫁周瑜。"},{"s":"「羽扇綸巾」描寫的裝束特徵是：","o":["手持羽扇、頭戴絲巾，顯儒雅從容（非全副鐵甲）","全身鐵甲重盔","僧人袈裟","農夫短褐"],"e":"羽扇綸巾為儒將／名士裝束，突出從容不迫。"},{"s":"「檣櫓」本義／此處借指：","o":["船上桅杆與槳櫓，借指曹軍船艦","城牆垛口","酒杯與筷子","筆墨紙硯"],"e":"檣＝桅；櫓＝槳；此處代指敵船／水軍。"},{"s":"「故國神遊」的「故國」在本詞中較指：","o":["古戰場／三國舊地（神思遊於往昔之地）","北宋都城汴京本身","外國","作者祖籍四川的全部行政區劃"],"e":"神遊於三國赤壁故地；懷想古事。"},{"s":"「華髮」的意思是：","o":["花白的頭髮（年華漸老之徵）","華麗的髮飾","少年黑髮","假髮"],"e":"華髮＝花白髮；「早生華髮」慨嘆衰老之早。"},{"s":"「一尊還酹江月」的「尊」字：","o":["同「樽」，酒器／一杯酒","尊敬別人","祖宗牌位","軍隊編制"],"e":"尊＝樽；一尊＝一杯酒。"},{"s":"「酹」的意思是：","o":["把酒澆在地上（或江中）祭奠","痛飲至醉","釀酒","禁止喝酒"],"e":"酹＝以酒祭奠；「酹江月」即對江月奠酒。"},{"s":"「浪淘盡」的「淘」意思較接近：","o":["沖刷、淘汰","淘米做飯","淘氣","搜尋"],"e":"浪淘盡＝江浪沖刷盡；時間淘盡英雄。"},{"s":"「風流人物」在本詞中指：","o":["傑出、有功業風采的人物","行為不檢點的人","只會風花雪月的詩人","商人"],"e":"此處「風流」褒義，指傑出人物。"},{"s":"「公瑾」是：","o":["周瑜的字","諸葛亮的字","蘇軾的字","曹操的字"],"e":"周瑜字公瑾。"},{"s":"「雄姿英發」形容周瑜：","o":["雄姿勃發、意氣風發","衰老無力","猶豫不決","貪生怕死"],"e":"寫周瑜年輕時英氣逼人。"},{"s":"「灰飛煙滅」形容：","o":["曹軍船艦瞬間摧毀，如灰煙消散","炊煙裊裊","火山爆發","作者燒掉詩稿"],"e":"談笑間敵艦灰飛煙滅——破敵之速、之徹底。"},{"s":"「人間如夢」的「如夢」主要表達：","o":["人生短暫虛幻如夢的感慨","作者正在睡覺做噩夢","勸人日日做夢","否定月亮存在"],"e":"收束全詞的人生感慨；與酹江月相承。"}];
+var Q_RHET = [{"s":"《念奴嬌》是：","o":["詞牌名（本詞為長調／慢詞）","詩題本身無詞牌","曲牌且不可填詞","八股文體"],"e":"念奴嬌為詞牌；《赤壁懷古》為題。"},{"s":"本詞的篇章結構主要分為：","o":["上片與下片","首頷頸尾四聯（律詩）","起承轉合四段論說文","三幕劇"],"e":"詞分上下闋（片）；上片寫景懷古，下片寫人抒情。"},{"s":"上片的主要內容是：","o":["寫長江赤壁雄奇之景，引出三國周郎與豪傑","專寫小喬出嫁禮儀","專寫作者自嘲華髮","記錄水文測量"],"e":"上片：大江→故壘→亂石驚濤→江山豪傑。"},{"s":"下片的主要內容是：","o":["遙想周瑜功業，轉入自傷與人生如夢的感慨","重複抄寫上片","描寫農事節氣","議論科舉制度"],"e":"下片：公瑾、小喬、羽扇破敵→故國神遊、華髮→如夢酹月。"},{"s":"「亂石穿空，驚濤拍岸，捲起千堆雪」主要運用：","o":["誇張與比喻（雪喻浪花），寫景雄奇","對偶律詩四聯","書信套語","純粹議論無形象"],"e":"穿空、拍岸、千堆雪——誇飾江景；雪為比喻。"},{"s":"「江山如畫」運用的修辞是：","o":["明喻（如畫）","反問","設問","通感味覺"],"e":"以「如」字構成明喻。"},{"s":"本詞「以景入情」的特點是：","o":["先以大江赤壁之景起興，再引入懷古與身世之感","先議論後寫景、景情無關","全篇無景物","只寫情不寫景"],"e":"上片寫景，下片寫人寫情，景為情之基。"},{"s":"詞人以周瑜對照自身，屬於：","o":["對比／反襯（少年功業 ↔ 謫居華髮）","完全無關的兩人合傳","擬人植物","頂真修辭為主"],"e":"周瑜英發破敵，對照己身早生華髮、功業未就。"},{"s":"「羽扇綸巾，談笑間、檣櫓灰飛煙滅」的表達效果是：","o":["以從容之態與破敵之速形成張力，突顯儒將風采","寫周瑜驚慌失措","寫作者親自指揮水戰","寫小喬的梳妝"],"e":"談笑與灰飛煙滅對照，見舉重若輕。"},{"s":"本詞用韻特點常被指出與何者相關？","o":["多押入聲韻，聲情激壯，助豪放氣勢","全用平聲且柔靡如花間","無韻可尋","只押江陽韻且婉約"],"e":"物、壁、雪、傑、發、滅、髮、月等多為入聲，聲情豪壯。"},{"s":"就風格流派而言，本詞最常歸入：","o":["豪放","婉約閨情","宮體豔情","玄言詩"],"e":"大江、英雄、破敵——豪放詞代表作之一。"},{"s":"「多情應笑我」的「應笑我」語氣是：","o":["設想別人（或周瑜）應笑自己多情，帶自嘲","命令讀者必須笑","第三人稱全知敘事無感情","外交照會用語"],"e":"自嘲口吻，轉折到身世之感。"},{"s":"結尾「人間如夢，一尊還酹江月」在章法上的作用是：","o":["卒章收束：由懷古自傷升至人生感慨與曠達","另開新題寫農曆","重複上片原句","交代出版信息"],"e":"以如夢、酹月收束全詞情志。"},{"s":"「檣櫓灰飛煙滅」中「灰飛煙滅」主要運用：","o":["比喻／誇張，寫敵艦瞬間毀滅","誇飾作者白髮數量","擬人月亮說話","雙關諧音開玩笑"],"e":"以灰、煙之速滅喻曹軍潰敗。"},{"s":"本詞藝術手法組合最貼切的是：","o":["上下片結構＋以景入情＋周瑜對照＋入聲韻助豪放","只有三段論邏輯","純書信體","戲劇分場對白體"],"e":"校本重點：結構、景情、對照、聲韻、豪放。"}];
+
+var SECTIONS = {
+  content: { key: 'content', title: '內容理解', Q: Q_CONTENT },
+  vocab: { key: 'vocab', title: '字詞解釋', Q: Q_VOCAB },
+  rhetorical: { key: 'rhetorical', title: '寫作手法', Q: Q_RHET }
+};
+var SEC_ORDER = ['content', 'vocab', 'rhetorical'];
+var MAX_TOTAL = 45;
+var DRAFT_KEY = 'niannujiao_daodu_draft';
+
+function shuffle(a) {
+  a = a.slice();
+  for (var i = a.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+function $(id) { return document.getElementById(id); }
+
+var state = {};
+SEC_ORDER.forEach(function (k) {
+  state[k] = { order: null, cur: 0, answers: [], finished: false, score: 0 };
+});
+var currentSec = 'content';
+
+function studentInfo() {
+  return {
+    class: ($('cls').value || '').trim().toUpperCase(),
+    studentId: ($('sid').value || '').trim(),
+    name: ($('sname').value || '').trim()
+  };
+}
+function requireStudent() {
+  var s = studentInfo();
+  if (!s.class || !s.studentId || !s.name) {
+    alert('請先填寫班別、學號、姓名，再開始或交卷。');
+    $('studentCard').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    $('cls').focus();
+    return null;
+  }
+  return s;
+}
+
+function prepareOrder(secKey) {
+  var Q = SECTIONS[secKey].Q;
+  return Q.map(function (q) {
+    return { s: q.s, e: q.e, ans: q.o[0], o: shuffle(q.o) };
+  });
+}
+
+function startSection(secKey, force) {
+  currentSec = secKey;
+  var st = state[secKey];
+  if (force || !st.order) {
+    st.order = prepareOrder(secKey);
+    st.cur = 0;
+    st.answers = [];
+    st.finished = false;
+    st.score = 0;
+  }
+  document.querySelectorAll('.tabs button').forEach(function (b) {
+    var on = b.getAttribute('data-sec') === secKey;
+    b.setAttribute('aria-selected', on ? 'true' : 'false');
+    b.classList.toggle('active', on);
+  });
+  $('finalResult').hidden = true;
+  if (st.finished) {
+    $('panel-quiz').hidden = true;
+    showSecResult(secKey);
+  } else {
+    $('secResult').hidden = true;
+    $('panel-quiz').hidden = false;
+    showQuestion();
+  }
+  updateOverall();
+}
+
+function setSecScore(secKey) {
+  var st = state[secKey];
+  var s = 0;
+  for (var i = 0; i < st.answers.length; i++) {
+    if (st.answers[i] && st.answers[i].ok) s++;
+  }
+  st.score = s;
+  return s;
+}
+
+function updateOverall() {
+  var done = 0, totalScore = 0;
+  SEC_ORDER.forEach(function (k) {
+    var st = state[k];
+    var answered = st.answers.filter(function (a) { return a; }).length;
+    done += answered;
+    totalScore += setSecScore(k);
+  });
+  $('overallFill').style.width = (done / MAX_TOTAL * 100) + '%';
+  $('overallBar').setAttribute('aria-valuenow', String(done));
+  $('overallText').textContent = done + ' / ' + MAX_TOTAL + ' 題　總分 ' + totalScore;
+  $('scContent').textContent = state.content.score;
+  $('scVocab').textContent = state.vocab.score;
+  $('scRhet').textContent = state.rhetorical.score;
+
+  var allDone = SEC_ORDER.every(function (k) { return state[k].finished; });
+  if (allDone) {
+    $('submitEarlyBtn').hidden = false;
+    showFinal();
+  }
+}
+
+function showQuestion() {
+  var st = state[currentSec];
+  var q = st.order[st.cur];
+  var N = st.order.length;
+  st._picked = null;
+  st._checked = false;
+  $('stem').textContent = (st.cur + 1) + '. ' + q.s;
+  var box = $('opts');
+  box.innerHTML = '';
+  q.o.forEach(function (t, i) {
+    var l = document.createElement('label');
+    l.className = 'opt';
+    var r = document.createElement('input');
+    r.type = 'radio'; r.name = 'opt'; r.value = String(i);
+    var sp = document.createElement('span');
+    sp.textContent = String.fromCharCode(65 + i) + '. ' + t;
+    l.appendChild(r); l.appendChild(sp);
+    r.addEventListener('change', function () {
+      if (st._checked) return;
+      st._picked = i;
+      Array.prototype.forEach.call(box.children, function (c) { c.classList.remove('sel'); });
+      l.classList.add('sel');
+      $('checkBtn').disabled = false;
+    });
+    box.appendChild(l);
+  });
+  $('fb').hidden = true;
+  $('checkBtn').hidden = false;
+  $('checkBtn').disabled = true;
+  $('nextBtn').hidden = true;
+  $('secDoneBtn').hidden = true;
+  var answered = st.answers.filter(function (a) { return a; }).length;
+  $('secFill').style.width = (answered / N * 100) + '%';
+  $('secBar').setAttribute('aria-valuenow', String(answered));
+  $('secProgText').textContent = '第 ' + (st.cur + 1) + ' / ' + N + ' 題';
+  $('secScoreText').textContent = '本節答對：' + st.score;
+}
+
+function checkAnswer() {
+  var st = state[currentSec];
+  if (st._checked || st._picked === null) return;
+  st._checked = true;
+  $('checkBtn').disabled = true;
+  var q = st.order[st.cur];
+  var ok = q.o[st._picked] === q.ans;
+  st.answers[st.cur] = { ok: ok, pick: q.o[st._picked], ans: q.ans, idx: st.cur };
+  var labs = $('opts').children;
+  for (var i = 0; i < labs.length; i++) {
+    labs[i].querySelector('input').disabled = true;
+    if (q.o[i] === q.ans) labs[i].classList.add('ok');
+    else if (i === st._picked) labs[i].classList.add('bad');
+  }
+  var fb = $('fb');
+  fb.hidden = false;
+  fb.className = 'fb ' + (ok ? 'ok' : 'bad');
+  fb.textContent = (ok ? '✔ 答對了！' : '✘ 答錯了。正確答案：' + q.ans) + '　解說：' + q.e;
+  setSecScore(currentSec);
+  updateOverall();
+  $('secScoreText').textContent = '本節答對：' + st.score;
+  var answered = st.answers.filter(function (a) { return a; }).length;
+  var N = st.order.length;
+  $('secFill').style.width = (answered / N * 100) + '%';
+  $('checkBtn').hidden = true;
+  if (st.cur < N - 1) $('nextBtn').hidden = false;
+  else $('secDoneBtn').hidden = false;
+}
+
+function nextQuestion() {
+  var st = state[currentSec];
+  if (!st._checked) return;
+  if (st.cur < st.order.length - 1) {
+    st.cur++;
+    showQuestion();
+  }
+}
+
+function finishSection() {
+  var st = state[currentSec];
+  if (!st._checked) return;
+  st.finished = true;
+  setSecScore(currentSec);
+  updateOverall();
+  showSecResult(currentSec);
+  saveDraft();
+  if (SEC_ORDER.every(function (k) { return state[k].finished; })) {
+    showFinal();
+  }
+}
+
+function showSecResult(secKey) {
+  var st = state[secKey];
+  var N = SECTIONS[secKey].Q.length;
+  $('panel-quiz').hidden = true;
+  $('secResult').hidden = false;
+  $('secResultTitle').textContent = SECTIONS[secKey].title + '・本節完成';
+  $('secFinal').textContent = '得分：' + st.score + ' / ' + N;
+  var p = st.score / N;
+  $('secFinalMsg').textContent = p >= 0.8 ? '表現出色，繼續保持！' : p >= 0.5 ? '不錯，請重溫答錯的題目。' : '請細閱課文及解說，再試一次。';
+  var rv = $('secReview');
+  rv.innerHTML = '';
+  st.order.forEach(function (q, i) {
+    var a = st.answers[i];
+    if (!a) return;
+    var d = document.createElement('div');
+    d.className = 'rv';
+    var t = document.createElement('div');
+    t.className = 't';
+    t.textContent = (i + 1) + '. ' + q.s;
+    var r = document.createElement('div');
+    r.className = a.ok ? 'c' : 'w';
+    r.textContent = (a.ok ? '✔ 你的答案：' : '✘ 你的答案：') + a.pick + (a.ok ? '' : '｜正確答案：' + q.ans);
+    var e = document.createElement('div');
+    e.className = 'muted';
+    e.textContent = '解說：' + q.e;
+    d.appendChild(t); d.appendChild(r); d.appendChild(e);
+    rv.appendChild(d);
+  });
+  var idx = SEC_ORDER.indexOf(secKey);
+  var nextKey = idx < SEC_ORDER.length - 1 ? SEC_ORDER[idx + 1] : null;
+  $('goNextSecBtn').hidden = !nextKey;
+  $('goNextSecBtn').textContent = nextKey ? '前往「' + SECTIONS[nextKey].title + '」' : '';
+  $('goNextSecBtn').onclick = nextKey ? function () {
+    startSection(nextKey, false);
+    $('zice').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } : null;
+  $('submitEarlyBtn').hidden = !SEC_ORDER.every(function (k) { return state[k].finished; });
+}
+
+function wrongSummary() {
+  var parts = [];
+  SEC_ORDER.forEach(function (k) {
+    var st = state[k];
+    var wrong = [];
+    st.answers.forEach(function (a, i) {
+      if (a && !a.ok) wrong.push(i + 1);
+    });
+    if (wrong.length) parts.push(SECTIONS[k].title + '錯題:' + wrong.join(','));
+  });
+  return parts.join('；') || '全對';
+}
+
+function buildPayload(stu) {
+  var sc = state.content.score;
+  var sv = state.vocab.score;
+  var sr = state.rhetorical.score;
+  var total = sc + sv + sr;
+  return {
+    timestamp: new Date().toISOString(),
+    class: stu.class,
+    studentId: stu.studentId,
+    name: stu.name,
+    scoreContent: sc,
+    scoreVocab: sv,
+    scoreRhetorical: sr,
+    scoreTotal: total,
+    maxTotal: MAX_TOTAL,
+    percent: Math.round(total / MAX_TOTAL * 1000) / 10,
+    answersSummary: wrongSummary(),
+    userAgent: navigator.userAgent || ''
+  };
+}
+
+function showFinal() {
+  if (!SEC_ORDER.every(function (k) { return state[k].finished; })) return;
+  $('finalResult').hidden = false;
+  var total = state.content.score + state.vocab.score + state.rhetorical.score;
+  $('finalScore').textContent = '總分：' + total + ' / ' + MAX_TOTAL;
+  $('finalDetail').innerHTML =
+    '內容理解 ' + state.content.score + '/15　｜　字詞解釋 ' + state.vocab.score +
+    '/15　｜　寫作手法 ' + state.rhetorical.score + '/15<br>正確率 ' +
+    (Math.round(total / MAX_TOTAL * 1000) / 10) + '%';
+  saveDraft();
+}
+
+function saveDraft() {
+  try {
+    var stu = studentInfo();
+    var draft = {
+      student: stu,
+      scores: {
+        content: state.content.score,
+        vocab: state.vocab.score,
+        rhetorical: state.rhetorical.score
+      },
+      finished: SEC_ORDER.map(function (k) { return { k: k, done: state[k].finished, score: state[k].score }; }),
+      summary: wrongSummary(),
+      savedAt: new Date().toISOString()
+    };
+    localStorage.setItem(DRAFT_KEY, JSON.stringify(draft));
+  } catch (e) {}
+}
+
+function submitToSheet() {
+  var stu = requireStudent();
+  if (!stu) return;
+  if (!SEC_ORDER.every(function (k) { return state[k].finished; })) {
+    alert('請先完成三個部分的全部題目，再交卷。');
+    return;
+  }
+  var payload = buildPayload(stu);
+  saveDraft();
+  var msg = $('submitMsg');
+  msg.hidden = false;
+
+  if (!GAS_WEBAPP_URL) {
+    msg.textContent = '成績已暫存在本機。目前未能上傳至老師試算表，請稍後再試或向老師查詢。';
+    return;
+  }
+  msg.textContent = '正在上傳成績…';
+  $('submitBtn').disabled = true;
+  fetch(GAS_WEBAPP_URL, {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify(payload)
+  }).then(function () {
+    msg.textContent = '✔ 已送出交卷請求。若老師試算表「交卷紀錄」出現新列，即表示成功。';
+    $('submitBtn').disabled = false;
+  }).catch(function () {
+    msg.textContent = '✘ 上傳失敗，請檢查網絡後再試。本機草稿已保存。';
+    $('submitBtn').disabled = false;
+  });
+}
+
+var yuyiToggle = $('yuyiToggle');
+var yuyiBody = $('yuyiBody');
+if (yuyiToggle && yuyiBody) {
+  yuyiToggle.addEventListener('click', function () {
+    var hide = !yuyiBody.hidden;
+    yuyiBody.hidden = hide;
+    yuyiToggle.setAttribute('aria-expanded', hide ? 'false' : 'true');
+    yuyiToggle.textContent = hide ? '顯示語譯' : '隱藏語譯';
+  });
+}
+
+function renderVideo() {
+  var area = $('videoArea');
+  var link = $('videoTitleLink');
+  var title = '寶寶老師陪你快速溫範文｜《念奴嬌·赤壁懷古》';
+  if (YOUTUBE_ID) {
+    link.href = 'https://www.youtube.com/watch?v=' + encodeURIComponent(YOUTUBE_ID);
+    area.innerHTML = '<div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/' +
+      encodeURIComponent(YOUTUBE_ID) + '?rel=0" title="' + title + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>' +
+      '<p class="muted" style="margin-top:10px">若本機開啟（file://）未能播放，請改用上方連結，或發佈後於網頁觀看。</p>';
+  } else {
+    link.href = '#shipin';
+    link.removeAttribute('target');
+    area.innerHTML = '<div class="video-box"><strong>影片即將上線</strong><span>' + title + '</span></div>';
+  }
+}
+
+document.querySelectorAll('.tabs button').forEach(function (b) {
+  b.addEventListener('click', function () {
+    startSection(b.getAttribute('data-sec'), false);
+  });
+});
+$('checkBtn').addEventListener('click', checkAnswer);
+$('nextBtn').addEventListener('click', nextQuestion);
+$('secDoneBtn').addEventListener('click', finishSection);
+$('retrySecBtn').addEventListener('click', function () {
+  startSection(currentSec, true);
+  $('zice').scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+$('submitBtn').addEventListener('click', submitToSheet);
+$('submitEarlyBtn').addEventListener('click', function () {
+  showFinal();
+  $('finalResult').scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+$('retryAllBtn').addEventListener('click', function () {
+  if (!confirm('確定全部重做？目前得分將重置。')) return;
+  SEC_ORDER.forEach(function (k) {
+    state[k] = { order: null, cur: 0, answers: [], finished: false, score: 0 };
+  });
+  $('finalResult').hidden = true;
+  startSection('content', true);
+  updateOverall();
+});
+
+try {
+  var d = localStorage.getItem(DRAFT_KEY);
+  if (d) {
+    var draft = JSON.parse(d);
+    if (draft.student) {
+      if (draft.student.class) $('cls').value = draft.student.class;
+      if (draft.student.studentId) $('sid').value = draft.student.studentId;
+      if (draft.student.name) $('sname').value = draft.student.name;
+    }
+  }
+} catch (e) {}
+
+renderVideo();
+updateOverall();
+startSection('content', false);
+
+})();
+
+</script>
+</body>
+</html>
